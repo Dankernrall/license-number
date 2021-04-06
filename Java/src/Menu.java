@@ -2,8 +2,9 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class Menu {
-    RegionFinder regionFinder = new RegionFinder();
-    public void startMenu(Scanner in, Matcher mat){
+    private RegionFinder regionFinder = new RegionFinder();
+
+    public void startMenu(Scanner in, Matcher mat) {
         while (true) {
             System.out.println("Возможности меню:\n1) Показать регион\n2) Завершить работу");
             switch (in.nextInt()) {
